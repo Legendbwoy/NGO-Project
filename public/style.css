@@ -1,0 +1,373 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #cc890c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #007bff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.header-bottom {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.hero {
+    margin-top: 180px; /* Adjust based on header height */
+    background-image: url('img/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-busine.jpg');
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    position: relative;
+    background-color: #007bff; /* Fallback background color */
+    padding: 60px 20px; /* Adjust padding as needed */
+    text-align: center;
+    color: white;
+}
+
+.hero__content {
+    max-width: 800px; /* Maximum width for the content */
+    margin: 0 auto; /* Center the content */
+}
+
+.hero__description {
+    margin-bottom: 30px; /* Space between description and button */
+}
+
+.hero__description h2 {
+    font-size: 2.5rem; /* Size of the main heading */
+    margin: 0; /* Remove default margin */
+}
+
+.hero__description h3 {
+    font-size: 1.5rem; /* Size of the subheading */
+    margin: 0; /* Remove default margin */
+    font-weight: normal; /* Normal weight for subheading */
+}
+
+.btn--primary {
+    background-color: #ffcc00; /* Button background color */
+    color: #000; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.btn--primary:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+
+.impact {
+    padding: 20px;
+    text-align: center;
+}
+
+.impact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+}
+
+.impact-card {
+    background-color: #fff; /* White background for cards */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    width: 200px; /* Fixed width for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation effect */
+}
+
+.impact-card.orange_dark {
+    background-color: #cc890c; /* Dark orange background for emphasis */
+    color: white; /* White text color */
+}
+
+.impact-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.impact-card__content {
+    text-align: center;
+}
+
+.impact-card__title {
+    font-size: 2rem; /* Large font for the number */
+    margin: 0; /* Remove default margin */
+}
+
+.impact-card__subtitle {
+    font-size: 1rem; /* Smaller font for the subtitle */
+    margin: 10px 0; /* Space above and below */
+}
+
+.btn--secondary {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    padding: 8px 12px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.btn--secondary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.claim__background-image {
+    height: 100px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+}
+
+.claim__content {
+    text-align: center;
+}
+
+.mission {
+    padding: 20px;
+    text-align: center;
+}
+
+.container__footer {
+    text-align: center;
+}
+
+.eck-entity {
+    margin-bottom: 20px;
+}
+
+.component-text {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container__title {
+    text-align: center;
+}
+
+.container__header {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container__components {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.component-icon {
+    margin: 10px;
+    text-align: center;
+}
+
+.icon__image img {
+    width: 64px;
+    height: 64px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f4f4f4;
+}
+
+.latest-videos {
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* Light background for the section */
+}
+
+.latest-videos__title {
+    text-align: center;
+    font-size: 2rem; /* Title size */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.latest-videos__grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center the video cards */
+    gap: 20px; /* Space between cards */
+}
+
+.video-card {
+    width: 300px; /* Fixed width for video cards */
+    height: 200px; /* Fixed height for video cards */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.video-card iframe {
+    width: 100%; /* Full width of the card */
+    height: 100%; /* Full height of the card */
+    border: none; /* Remove default border */
+}
+
+.eck-entity {
+    margin: 40px 0; /* Space above and below the banner */
+}
+
+.wvi-cta-component {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    padding: 20px;
+    background-color: white; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.banner-full__content {
+    flex: 1; /* Allow content to take available space */
+    padding: 20px; /* Padding around the content */
+}
+
+.banner-full__media {
+    flex: 1; /* Allow media to take available space */
+}
+
+.banner-image {
+    width: 100%; /* Full width */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.banner-full__title {
+    font-size: 2rem; /* Title size */
+    margin: 10px 0; /* Space around the title */
+}
+
+.banner-full__sub-title {
+    font-size: 1.2rem; /* Subtitle size */
+    color: #cc890c; /* Orange color */
+}
+
+.banner-full__description p {
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+.btn {
+    margin-right: 10px; /* Space between buttons */
+    text-decoration: none; /* Remove underline */
+}
+
+.btn--primary {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.btn--secondary {
+    background-color: #ccc; /* Secondary button color */
+    color: black; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+footer {
+    background-color: #ffffff; /* Match your footer background */
+    padding: 20px; /* Adjust padding */
+}
+
+nav ul {
+    list-style-type: none; /* No bullets */
+    padding: 0; /* No padding */
+}
+
+nav a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.mailchimp-signup-subscribe-form {
+    margin-top: 20px; /* Space above the form */
+}
+
+.block__title {
+    font-size: 1.2rem; /* Match title size */
+    color: #333; /* Title color */
+}
+
+.form-item {
+    margin-bottom: 10px; /* Space between fields */
+}
+
+.button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
