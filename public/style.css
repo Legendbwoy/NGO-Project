@@ -1,16 +1,18 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Header Styles */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #cc890c;
+    background-color: #cc890c; /* Header background color */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -40,46 +42,75 @@ body {
     transition: background-color 0.3s;
 }
 
-.button a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .button:hover {
     background-color: white;
 }
 
+/* Header Bottom Styles */
 .header-bottom {
-    background-color: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4; /* Background color for header */
+    padding: 10px 20px; /* Padding */
 }
 
-.menu {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+.nav {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Horizontal layout */
 }
 
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
+.nav > li {
+    position: relative; /* Position for dropdown */
+    margin-right: 30px; /* Space between menu items */
 }
 
-.menu a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
+.nav > li > a {
+    text-decoration: none; /* No underline */
+    color: #007bff; /* Link color */
+    padding: 15px; /* Padding */
+    display: block; /* Block display */
+    font-size: 1.2rem; /* Larger font size */
 }
 
+.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Absolute position */
+    top: 100%; /* Position below the parent item */
+    left: 0; /* Align to the left */
+    background-color: white; /* Background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow */
+    z-index: 1000; /* Ensure it appears above other elements */
+    width: 300px; /* Set a large width for dropdown */
+    padding: 20px; /* Padding inside dropdown */
+}
+
+.nav > li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+    margin: 10px 0; /* Space between dropdown items */
+}
+
+.dropdown a {
+    color: #000; /* Text color */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display for full clickable area */
+    padding: 10px 15px; /* Padding for dropdown items */
+    font-size: 1rem; /* Font size for dropdown items */
+}
+
+.dropdown a:hover {
+    background-color: #f4f4f4; /* Background color on hover */
+}
+
+/* Hero Section */
 .hero {
+    height: 290px;
     margin-top: 180px; /* Adjust based on header height */
-    background-image: url('img/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-busine.jpg');
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    position: relative;
+    background-image: url('img/charCase1.jpg');
+    background-size: cover;
+    background-position: center;
     background-color: #007bff; /* Fallback background color */
     padding: 60px 20px; /* Adjust padding as needed */
     text-align: center;
@@ -106,6 +137,7 @@ body {
     font-weight: normal; /* Normal weight for subheading */
 }
 
+/* Button Styles */
 .btn--primary {
     background-color: #ffcc00; /* Button background color */
     color: #000; /* Button text color */
@@ -119,6 +151,20 @@ body {
     background-color: #e6b800; /* Darker shade on hover */
 }
 
+.btn--secondary {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    padding: 8px 12px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.btn--secondary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Impact Section Styles */
 .impact {
     padding: 20px;
     text-align: center;
@@ -164,34 +210,7 @@ body {
     margin: 10px 0; /* Space above and below */
 }
 
-.btn--secondary {
-    background-color: #007bff; /* Button color */
-    color: white; /* Button text color */
-    padding: 8px 12px; /* Button padding */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Transition effect */
-}
-
-.btn--secondary:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-}
-
-.claim__background-image {
-    height: 100px; /* Adjust as needed */
-    background-size: cover;
-    background-position: center;
-}
-
-.claim__content {
-    text-align: center;
-}
-
-.mission {
-    padding: 20px;
-    text-align: center;
-}
-
+/* Footer Styles */
 .container__footer {
     text-align: center;
 }
@@ -231,11 +250,40 @@ body {
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Background color */
+    padding: 20px; /* Padding */
+    text-align: center; /* Center text */
 }
 
+footer nav ul {
+    list-style-type: none; /* No bullets */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+footer nav a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+footer nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.mailchimp-signup-subscribe-form {
+    margin-top: 20px; /* Space above the form */
+}
+
+.block__title {
+    font-size: 1.2rem; /* Title size */
+    color: #333; /* Title color */
+}
+
+.form-item {
+    margin-bottom: 10px; /* Space between fields */
+}
+
+/* Latest Videos Styles */
 .latest-videos {
     padding: 40px 20px;
     background-color: #f4f4f4; /* Light background for the section */
@@ -268,6 +316,7 @@ footer {
     border: none; /* Remove default border */
 }
 
+/* Banner Styles */
 .eck-entity {
     margin: 40px 0; /* Space above and below the banner */
 }
@@ -307,67 +356,4 @@ footer {
 
 .banner-full__description p {
     margin: 10px 0; /* Space between paragraphs */
-}
-
-.btn {
-    margin-right: 10px; /* Space between buttons */
-    text-decoration: none; /* Remove underline */
-}
-
-.btn--primary {
-    background-color: #007bff; /* Primary button color */
-    color: white; /* Button text color */
-    padding: 10px 20px; /* Button padding */
-    border-radius: 5px; /* Rounded corners */
-}
-
-.btn--secondary {
-    background-color: #ccc; /* Secondary button color */
-    color: black; /* Button text color */
-    padding: 10px 20px; /* Button padding */
-    border-radius: 5px; /* Rounded corners */
-}
-
-footer {
-    background-color: #ffffff; /* Match your footer background */
-    padding: 20px; /* Adjust padding */
-}
-
-nav ul {
-    list-style-type: none; /* No bullets */
-    padding: 0; /* No padding */
-}
-
-nav a {
-    color: #007bff; /* Link color */
-    text-decoration: none; /* No underline */
-}
-
-nav a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-.mailchimp-signup-subscribe-form {
-    margin-top: 20px; /* Space above the form */
-}
-
-.block__title {
-    font-size: 1.2rem; /* Match title size */
-    color: #333; /* Title color */
-}
-
-.form-item {
-    margin-bottom: 10px; /* Space between fields */
-}
-
-.button {
-    background-color: #007bff; /* Button color */
-    color: white; /* Button text color */
-    border: none; /* No border */
-    padding: 10px 15px; /* Button padding */
-    border-radius: 5px; /* Rounded corners */
-}
-
-.button:hover {
-    background-color: #0056b3; /* Darker on hover */
 }
