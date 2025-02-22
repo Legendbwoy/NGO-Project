@@ -434,3 +434,39 @@ footer nav a:hover {
     display: flex;
     align-items: center;
 }
+
+.menu-item {
+    position: relative; /* Ensure dropdowns are positioned correctly */
+}
+
+.menu-item ul {
+    display: none; /* Hide by default */
+    position: absolute; /* Position the dropdown */
+    top: 100%; /* Position below the menu item */
+    left: 0; /* Align with the left edge */
+    width: 100vw; /* Full width of the viewport */
+    max-height: 80vh; /* Limit the height */
+    overflow-y: auto; /* Allow scrolling if content is too tall */
+    background-color: #fbf9f9; /* Background color */
+    z-index: 1000; /* Ensure it appears above other content */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add shadow for depth */
+}
+
+.menu-item:hover ul {
+    display: block; /* Show dropdown on hover */
+}
+
+.menu-item ul {
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.menu-item ul a {
+    color: white; /* Dropdown link color */
+    padding: 10px; /* Padding for links */
+    display: block; /* Make links block elements */
+}
+
+.menu-item ul a:hover {
+    background-color: #444; /* Background color on hover */
+}

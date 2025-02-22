@@ -340,7 +340,7 @@
                 <div class="banner-full__media wvi-image-cover">
                     <div class="media media--hero-sector" data-media-id="345771">
                         <!-- You can add an image or video here if needed -->
-                        <img src="img/ngo-1.jpeg" alt="Banner Image" class="banner-image" />
+                        <img src="img/ngo.jpeg" alt="Banner Image" class="banner-image" />
                     </div>
                 </div>
             </div>
