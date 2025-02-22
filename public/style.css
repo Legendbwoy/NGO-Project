@@ -250,9 +250,62 @@ body {
 }
 
 footer {
-    background-color: #f4f4f4; /* Background color */
-    padding: 20px; /* Padding */
-    text-align: center; /* Center text */
+    background-color: #333; /* Change as needed */
+    color: white; /* Text color */
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Adjust width */
+    width: 100%;
+}
+
+.footer-grid {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1; /* Equal width for each column */
+    margin: 10px; /* Spacing between columns */
+    min-width: 200px; /* Minimum width */
+}
+
+.footer-column h4 {
+    margin-bottom: 10px; /* Space below header */
+}
+
+.footer-column ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+.footer-column a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.footer-column a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.mailchimp-signup-subscribe-form {
+    margin-top: 20px; /* Space above the form */
+    text-align: center; /* Center the newsletter form */
+}
+
+.form-item {
+    margin-bottom: 10px; /* Space between fields */
 }
 
 footer nav ul {
@@ -356,4 +409,28 @@ footer nav a:hover {
 
 .banner-full__description p {
     margin: 10px 0; /* Space between paragraphs */
+}
+
+.video-links-wrap {
+    padding: 20px;
+}
+
+.video-slider {
+    margin: 0 -10px; /* Adjusts spacing for inner elements */
+}
+
+.video-item {
+    background-color: #222; /* Optional background color */
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 10px; /* Spacing between video items */
+}
+
+.video-item-title {
+    padding: 10px;
+}
+
+.video-date {
+    display: flex;
+    align-items: center;
 }

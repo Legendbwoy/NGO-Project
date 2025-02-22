@@ -7,6 +7,12 @@
     <title>World Vision Inspired</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 
 <body>
@@ -223,29 +229,85 @@
             </div>
         </div>
 
-        <section class="latest-videos">
-            <div class="container">
-                <h4 class="latest-videos__title">Latest Videos</h4>
-                <div class="latest-videos__grid">
-                    <div class="video-card">
-                        <iframe src="https://www.youtube.com/embed/video_id1" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+        <div class="container">
+            <div class="main-video-wrap fl-wrap">
+                <div class="video-main-cont">
+                    <div class="video-section-title fl-wrap">
+                        <h2 class="text-white">Latest Video</h2>
+                        <h4 class="text-white">Stay up-to-date</h4>
+                        <a href="https://www.youtube.com/@officialgaftv" target="_blank" class="text-white">
+                            <i class="fas fa-caret-right"></i> Visit Channel
+                        </a>
                     </div>
-                    <div class="video-card">
-                        <iframe src="https://www.youtube.com/embed/video_id2" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="video-card">
-                        <iframe src="https://www.youtube.com/embed/video_id3" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <!-- Add more video cards as needed -->
+                    <a class="video-holder vh-main fl-wrap image-popup" style="height:500px"
+                        href="https://www.youtube.com/watch?v=vhu7JP7doSU">
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/vhu7JP7doSU">
+                        </iframe>
+                        <div class="video-item-title text-white">
+                            <h4>BURIAL SERVICE FOR THE LATE AIR COMMODORE GODFRIED SACKEY PARKER</h4>
+                            <span class="video-date"><i class="far fa-clock"></i>
+                                <strong>Feb 12 2024</strong></span>
+                        </div>
+                    </a>
                 </div>
+
+                <!-- video-links-wrap -->
+                <div class="video-links-wrap ps ps--active-y">
+                    <div class="video-slider"> <!-- Slider container -->
+                        <!-- Video Item 1 -->
+                        <div class="video-item fl-wrap" data-url="javascript:void(0)"
+                            data-video-link="https://www.youtube.com/watch?v=K-6tPkm6cZA">
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/1pQFgf2n-Nc"
+                                frameborder="0" allowfullscreen></iframe>
+                            <div class="video-item-title text-white">
+                                <h4>Defence Minister Cuts Sod for Infrastructural Development Projects at Military
+                                    Training Schools.</h4>
+                                <span class="video-date"><i class="far fa-clock"></i><strong>Jul 31
+                                        2023</strong></span>
+                            </div>
+                        </div>
+
+                        <!-- Video Item 2 -->
+                        <div class="video-item fl-wrap" data-url="javascript:void(0)"
+                            data-video-link="https://www.youtube.com/watch?v=K-6tPkm6cZA">
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/QG957ewLYlE"
+                                frameborder="0" allowfullscreen></iframe>
+                            <div class="video-item-title text-white">
+                                <h4>CAS Sees Off 12 Ab Initio and 4 Certified Instructor Pilots to Train in USA.</h4>
+                                <span class="video-date"><i class="far fa-clock"></i><strong>Jun 19
+                                        2023</strong></span>
+                            </div>
+                        </div>
+
+                        <!-- Video Item 3 -->
+                        <div class="video-item fl-wrap" data-url="javascript:void(0)"
+                            data-video-link="https://www.youtube.com/watch?v=K-6tPkm6cZA">
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/z96Or3b_Vlo"
+                                frameborder="0" allowfullscreen></iframe>
+                            <div class="video-item-title text-white">
+                                <h4>AVM FAK Bekoe Appointed Chief of the Air Staff.</h4>
+                                <span class="video-date"><i class="far fa-clock"></i><strong>Jun 19
+                                        2023</strong></span>
+                            </div>
+                        </div>
+
+                        <!-- Video Item 4 -->
+                        <div class="video-item fl-wrap" data-url="javascript:void(0)"
+                            data-video-link="https://www.youtube.com/watch?v=K-6tPkm6cZA">
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/vhu7JP7doSU"
+                                frameborder="0" allowfullscreen></iframe>
+                            <div class="video-item-title text-white">
+                                <h4>BURIAL SERVICE FOR THE LATE AIR COMMODORE GODFRIED SACKEY PARKER</h4>
+                                <span class="video-date"><i class="far fa-clock"></i><strong>Feb 12
+                                        2024</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section>
+        </div>
+        </div>
         <div class="eck-entity">
             <div class="wvi-cta-component banner-full banner-full--left bg-color-white">
                 <div class="banner-full__content">
@@ -287,78 +349,124 @@
 
     <footer>
         <h2 class="visually-hidden" id="block-footer-menu">Footer</h2>
-        <nav>
-            <ul>
-                <li class="menu-item--about-us menu-item--expandable">
-                    <a href="/about-us">About Us</a>
-                    <ul>
-                        <li><a href="/our-vision-and-values">Our Vision &amp; Values</a></li>
-                        <li><a href="/our-history">Our History</a></li>
-                        <li><a href="https://www.wvi.org/about-us/our-leadership">Our Leadership</a></li>
-                        <li><a href="/our-structure">Our Structure</a></li>
-                        <li><a href="/our-partners">Our Partners</a></li>
-                        <li><a href="/accountability">Accountability</a></li>
-                        <li><a href="/about-us/faq">FAQ</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item--our-approaches-to-change menu-item--expandable">
-                    <a href="/our-approaches">Our Approaches to Change</a>
-                    <ul>
-                        <li><a href="/child-sponsorship">Child Sponsorship</a></li>
-                        <li><a href="/ENOUGH">Global Campaign</a></li>
-                        <li><a href="/our-promise">Our Global Strategy</a></li>
-                        <li><a href="/role-faith">The Role of Faith</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item--work-with-us menu-item--expandable">
-                    <a href="https://www.wvi.org/careers">Work with Us</a>
-                    <ul>
-                        <li><a href="https://www.wvi.org/careers/our-culture">Our Culture</a></li>
-                        <li><a href="https://www.wvi.org/careers">Careers &amp; Internships</a></li>
-                        <li><a href="https://worldvision.wd1.myworkdayjobs.com/WorldVisionInternational">Explore Open
-                                Positions</a></li>
-                        <li><a href="https://www.wvi.org/careers/internship-opportunities">Internships</a></li>
-                        <li><a href="https://www.wvi.org/suppliers/tenders">Open Tenders</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item--connect-with-us menu-item--expandable">
-                    <a href="/contact-us">Connect With Us</a>
-                    <ul>
-                        <li><a href="https://www.facebook.com/WorldVisionInternational" target="_blank">Facebook</a>
-                        </li>
-                        <li><a href="https://www.youtube.com/user/WorldVisionStory" target="_blank">Youtube</a></li>
-                        <li><a href="https://twitter.com/WorldVision" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/worldvision" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.linkedin.com/company/worldvision/" target="_blank">LinkedIn</a></li>
-                        <li><a href="/contact-us">Contact Us</a></li>
-                        <li><a href="/locations">World Vision in Your Country</a></li>
-                        <li><a href="http://worldvision.ethicspoint.com">Report a Concern</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="/about-us">About Us</a></li>
+                            <li><a href="/our-vision-and-values">Our Vision &amp; Values</a></li>
+                            <li><a href="/our-history">Our History</a></li>
+                            <li><a href="https://www.wvi.org/about-us/our-leadership">Our Leadership</a></li>
+                            <li><a href="/our-structure">Our Structure</a></li>
+                            <li><a href="/our-partners">Our Partners</a></li>
+                            <li><a href="/accountability">Accountability</a></li>
+                            <li><a href="/about-us/faq">FAQ</a></li>
+                        </ul>
+                    </div>
 
-        <div class="mailchimp-signup-subscribe-form">
-            <h4 class="block__title">Get Our Newsletter</h4>
-            <form action="/" method="post">
-                <div>
-                    <div class="form-item">
-                        <label for="edit-mergevars-email" class="visually-hidden">Email Address</label>
-                        <input type="email" id="edit-mergevars-email" name="mergevars[EMAIL]"
-                            placeholder="Email Address" required>
+                    <div class="footer-column">
+                        <h4>Our Approaches to Change</h4>
+                        <ul>
+                            <li><a href="/our-approaches">Our Approaches to Change</a></li>
+                            <li><a href="/child-sponsorship">Child Sponsorship</a></li>
+                            <li><a href="/ENOUGH">Global Campaign</a></li>
+                            <li><a href="/our-promise">Our Global Strategy</a></li>
+                            <li><a href="/role-faith">The Role of Faith</a></li>
+                        </ul>
                     </div>
-                    <div class="form-item">
-                        <input type="checkbox" id="edit-mergevars-terms" name="mergevars[terms]" required>
-                        <label for="edit-mergevars-terms">I agree to <a href="/terms">WVI's Terms &amp;
-                                Conditions</a>.</label>
+
+                    <div class="footer-column">
+                        <h4>Work with Us</h4>
+                        <ul>
+                            <li><a href="https://www.wvi.org/careers">Work with Us</a></li>
+                            <li><a href="https://www.wvi.org/careers/our-culture">Our Culture</a></li>
+                            <li><a href="https://www.wvi.org/careers">Careers &amp; Internships</a></li>
+                            <li><a href="https://worldvision.wd1.myworkdayjobs.com/WorldVisionInternational">Explore
+                                    Open Positions</a></li>
+                            <li><a href="https://www.wvi.org/careers/internship-opportunities">Internships</a></li>
+                            <li><a href="https://www.wvi.org/suppliers/tenders">Open Tenders</a></li>
+                        </ul>
                     </div>
-                    <div class="form-actions">
-                        <input type="submit" value="Submit" class="button">
+
+                    <div class="footer-column">
+                        <h4>Connect With Us</h4>
+                        <ul>
+                            <li><a href="/contact-us">Connect With Us</a></li>
+                            <li><a href="https://www.facebook.com/WorldVisionInternational"
+                                    target="_blank">Facebook</a></li>
+                            <li><a href="https://www.youtube.com/user/WorldVisionStory" target="_blank">Youtube</a>
+                            </li>
+                            <li><a href="https://twitter.com/WorldVision" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/worldvision" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/company/worldvision/" target="_blank">LinkedIn</a>
+                            </li>
+                            <li><a href="/locations">World Vision in Your Country</a></li>
+                            <li><a href="http://worldvision.ethicspoint.com">Report a Concern</a></li>
+                        </ul>
                     </div>
                 </div>
-            </form>
+            </nav>
+
+            <div class="mailchimp-signup-subscribe-form">
+                <h4 class="block__title">Get Our Newsletter</h4>
+                <form action="/" method="post">
+                    <div>
+                        <div class="form-item">
+                            <label for="edit-mergevars-email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="edit-mergevars-email" name="mergevars[EMAIL]"
+                                placeholder="Email Address" required>
+                        </div>
+                        <div class="form-item">
+                            <input type="checkbox" id="edit-mergevars-terms" name="mergevars[terms]" required>
+                            <label for="edit-mergevars-terms">I agree to <a href="/terms">WVI's Terms &amp;
+                                    Conditions</a>.</label>
+                        </div>
+                        <div class="form-actions">
+                            <input type="submit" value="Submit" class="button">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
 </body>
+<script>
+    $(document).ready(function() {
+        $('.video-slider').slick({
+            dots: true, // Show dots for navigation
+            infinite: true, // Infinite loop
+            speed: 500, // Transition speed
+            slidesToShow: 2, // Number of slides to show at once
+            slidesToScroll: 1, // Number of slides to scroll at once
+            autoplay: true, // Enable automatic sliding
+            autoplaySpeed: 3000, // Time between slides (in milliseconds)
+            pauseOnHover: true, // Pause on hover
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+    });
+</script>
 
 </html>
