@@ -34,12 +34,12 @@ body {
 
 .button {
     background-color: transparent;
-    border: 2px solid #007bff;
+    border: 2px solid #ffffff;
     border-radius: 8px;
     padding: 8px 12px;
-    color: #007bff;
+    color: #ffffff;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
 }
 
 .button:hover {
@@ -107,7 +107,7 @@ body {
 /* Hero Section */
 .hero {
     height: 290px;
-    margin-top: 180px; /* Adjust based on header height */
+    margin-top: 160px; /* Adjust based on header height */
     background-image: url('img/charCase1.jpg');
     background-size: cover;
     background-position: center;
@@ -170,26 +170,74 @@ body {
     text-align: center;
 }
 
-.impact-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between cards */
-    flex-wrap: wrap; /* Wrap cards on smaller screens */
+.impact-cards h1{
+    color: #FF6F20;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .impact-card {
     background-color: #fff; /* White background for cards */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 8px; /* Rounded corners */
+    /*border: 1px solid #ccc; /* Light border */
+    /*border-radius: 8px;  Rounded corners */
     padding: 20px;
+    height: 250px;
     width: 200px; /* Fixed width for cards */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.2s; /* Animation effect */
+    /*transition: transform 0.2s; /* Animation effect */
 }
 
-.impact-card.orange_dark {
-    background-color: #cc890c; /* Dark orange background for emphasis */
-    color: white; /* White text color */
+.impact {
+    padding: 20px; /* Padding for the section */
+}
+
+.impact-cards {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out cards */
+    flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+}
+
+.impact-card {
+    flex: 1; /* Allow cards to grow and fill space */
+    min-width: 280px; /* Minimum width for each card */
+    max-width: 0%; /* Maximum width to ensure they stay in line */
+    /*border-radius: 8px;  Rounded corners */
+    padding: 10px; /* Inner spacing */
+    margin: 10px; /* Spacing between cards */
+    text-align: center; /* Center the text */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.orange_dark {
+    background-color: #edc1aa; /* Example orange color */
+    color: white; /* Text color for contrast */
+}
+
+.light_blue {
+    background-color: #ffffff; /* Example light blue color */
+    color: black; /* Text color for readability */
+}
+
+.light_blue:hover{
+    background-color: #edc1aa;
+}
+
+.btn--secondary {
+    background-color: transparent; /* Button background */
+    color: #FF6F20; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    /*border-radius: 5px; /* Rounded button */
+    border: #FF6F20;
+    text-decoration: none; /* Remove underline */
+}
+
+.btn--secondary:hover {
+    background-color: rgb(10, 118, 9); /* Change button color on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+
+.container__footer {
+    text-align: center; /* Center footer text */
+    margin-top: 20px; /* Space above footer */
 }
 
 .impact-card:hover {
@@ -206,8 +254,10 @@ body {
 }
 
 .impact-card__subtitle {
-    font-size: 1rem; /* Smaller font for the subtitle */
+    font-size: 1.3rem; /* Smaller font for the subtitle */
+    font-weight: bolder;
     margin: 10px 0; /* Space above and below */
+    color: #000;
 }
 
 /* Footer Styles */
@@ -250,9 +300,62 @@ body {
 }
 
 footer {
-    background-color: #f4f4f4; /* Background color */
-    padding: 20px; /* Padding */
-    text-align: center; /* Center text */
+    background-color: #333; /* Change as needed */
+    color: white; /* Text color */
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Adjust width */
+    width: 100%;
+}
+
+.footer-grid {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1; /* Equal width for each column */
+    margin: 10px; /* Spacing between columns */
+    min-width: 200px; /* Minimum width */
+}
+
+.footer-column h4 {
+    margin-bottom: 10px; /* Space below header */
+}
+
+.footer-column ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+.footer-column a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.footer-column a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.mailchimp-signup-subscribe-form {
+    margin-top: 20px; /* Space above the form */
+    text-align: center; /* Center the newsletter form */
+}
+
+.form-item {
+    margin-bottom: 10px; /* Space between fields */
 }
 
 footer nav ul {
@@ -356,4 +459,65 @@ footer nav a:hover {
 
 .banner-full__description p {
     margin: 10px 0; /* Space between paragraphs */
+}
+
+.video-links-wrap {
+    padding: 20px;
+}
+
+.video-slider {
+    margin: 0 -10px; /* Adjusts spacing for inner elements */
+}
+
+.video-item {
+    background-color: #222; /* Optional background color */
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 10px; /* Spacing between video items */
+}
+
+.video-item-title {
+    padding: 10px;
+}
+
+.video-date {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    position: relative; /* Ensure dropdowns are positioned correctly */
+}
+
+.menu-item ul {
+    display: none; /* Hide by default */
+    position: absolute; /* Position the dropdown */
+    top: 100%; /* Position below the menu item */
+    left: 0; /* Align with the left edge */
+    width: 100vw; /* Full width of the viewport */
+    max-height: 80vh; /* Limit the height */
+    overflow-y: auto; /* Allow scrolling if content is too tall */
+    color: #000;
+    background-color: #382020; /* Background color */
+    z-index: 1000; /* Ensure it appears above other content */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add shadow for depth */
+}
+
+.menu-item:hover ul {
+    display: block; /* Show dropdown on hover */
+}
+
+.menu-item ul {
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.menu-item ul a {
+    color: white; /* Dropdown link color */
+    padding: 10px; /* Padding for links */
+    display: block; /* Make links block elements */
+}
+
+.menu-item ul a:hover {
+    background-color: #444; /* Background color on hover */
 }
