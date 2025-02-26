@@ -19,7 +19,7 @@
     <header class="header">
         <section class="header-top">
             <div class="logo">
-                <a href="#">
+                <a href="#" style="display: flex">
                     <img src="img/main-logo.png" alt="World Vision Logo">
                     <h2>HELP CHARITY</h2>
                 </a>
@@ -28,8 +28,8 @@
                 <div class="button donate-button">
                     <a href="#">DONATE NOW</a>
                 </div>
-                <div class="button contact-button">
-                    <a href="#">CONTACT US</a>
+                <div class="button contact-button" style="background-color: white !important; color: transparent !important">
+                    <a href="#">GET INVOLVED</a>
                 </div>
             </div>
         </section>
@@ -106,44 +106,43 @@
             </div>
         </section>
 
-        <section class="impact">
-            <div class="impact-cards">
-                <div class="impact-card orange_dark">
-                    <div class="impact-card__content">
-                        <div class="impact-card__title">
-                            <p>3M</p>
-                        </div>
-                        <div class="impact-card__subtitle">Children Sponsored</div>
-                        <a href="/child-sponsorship" class="btn btn--secondary" data-once="cta-button-analytic">Learn
-                            more</a>
-                    </div>
+<section class="impact">
+    <div class="impact-cards">
+        <div class="impact-card orange_dark">
+            <div class="impact-card__content">
+                <div class="impact-card__title">
+                    <h1>3M</h1>
                 </div>
-
-                <div class="impact-card">
-                    <div class="impact-card__content">
-                        <div class="impact-card__title">
-                            <p>3.1M</p>
-                        </div>
-                        <div class="impact-card__subtitle">People Gained Clean Water</div>
-                        <a href="/cleanwater" class="btn btn--secondary" data-once="cta-button-analytic">Learn more</a>
-                    </div>
-                </div>
-
-                <div class="impact-card orange_dark">
-                    <div class="impact-card__content">
-                        <div class="impact-card__title">
-                            <p>36.4M</p>
-                        </div>
-                        <div class="impact-card__subtitle">Helped in Emergencies</div>
-                        <a href="https://www.wvi.org/our-work/emergencies" class="btn btn--secondary"
-                            data-once="cta-button-analytic">Learn more</a>
-                    </div>
-                </div>
+                <div class="impact-card__subtitle">Children Sponsored</div>
+                <a href="/child-sponsorship" class="btn btn--secondary" data-once="cta-button-analytic">Learn more ></a>
             </div>
-            <div class="container__footer">
-                <p><em>*Facts and figures based on 2023 data</em></p>
+        </div>
+
+        <div class="impact-card light_blue"> <!-- Changed color class -->
+            <div class="impact-card__content">
+                <div class="impact-card__title">
+                    <h1>3.1M</h1>
+                </div>
+                <div class="impact-card__subtitle">People Gained Clean Water</div>
+                <a href="/cleanwater" class="btn btn--secondary" data-once="cta-button-analytic">Learn more ></a>
             </div>
-        </section>
+        </div>
+
+        <div class="impact-card orange_dark">
+            <div class="impact-card__content">
+                <div class="impact-card__title">
+                    <h1>36.4M</h1>
+                </div>
+                <div class="impact-card__subtitle">Helped in Emergencies</div>
+                <a href="https://www.wvi.org/our-work/emergencies" class="btn btn--secondary" data-once="cta-button-analytic">Learn more ></a>
+            </div>
+        </div>
+    </div>
+    <div class="container__footer">
+        <p><em>*Facts and figures based on 2023 data</em></p>
+         <p><em>*Facts and figures based on 2023 data</em></p>
+    </div>
+</section>
 
         <section class="mission">
             <div class="component-text section-py accent-color-orange bg-color-white">
