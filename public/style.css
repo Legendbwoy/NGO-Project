@@ -12,7 +12,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #cc890c; /* Header background color */
+    background-color: #fe3300; /* Header background color */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -48,7 +48,7 @@ body {
 
 /* Header Bottom Styles */
 .header-bottom {
-    background-color: #f4f4f4; /* Background color for header */
+    background-color: #ffffff; /* Background color for header */
     padding: 10px 20px; /* Padding */
 }
 

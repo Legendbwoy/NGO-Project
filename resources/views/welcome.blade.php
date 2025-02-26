@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Vision Inspired</title>
+    <title>CIGH</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css"
@@ -28,7 +28,7 @@
                 <div class="button donate-button">
                     <a href="#">DONATE NOW</a>
                 </div>
-                <div class="button contact-button" style="background-color: white !important; color: transparent !important">
+                <div class="button contact-button" style="background-color: #ffffff !important; color: transparent !important">
                     <a href="#">GET INVOLVED</a>
                 </div>
             </div>
