@@ -140,6 +140,7 @@
     </div>
     <div class="container__footer">
         <p><em>*Facts and figures based on 2023 data</em></p>
+         <p><em>*Facts and figures based on 2023 data</em></p>
     </div>
 </section>
 
