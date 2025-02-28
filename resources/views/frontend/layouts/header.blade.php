@@ -89,19 +89,21 @@
     <div class="top-header">
         <div class="container">
             <div class="top-content-wrap row align-items-center justify-content-end">
-                <div class="col-sm-4">
+                <div class="col-sm-4" style="padding-left:1%">
                     <div class="site-branding">
                         <a href="#"><img src="{{ asset('website/img/logo.png') }}" alt="Brand"></a>
                     </div>
                 </div>
-                <div class="col-sm-8 d-flex align-items-center justify-content-end">
-                    <a href="#" class="default-btn donate-btn">Donate</a>
-                    <a href="#" class="default-btn involved-btn">Get Involved</a>
-                    <form class="search-form">
-                        <input type="text" placeholder="Search..." class="search-input">
-                        <button type="submit" class="search-btn">🔍</button>
-                    </form>
-                </div>
+               <div class="col-sm-8 d-flex align-items-center justify-content-end" style="padding-right:1%">
+    <a href="#" class="default-btn donate-btn">Donate</a>
+    <a href="#" class="default-btn involved-btn">Get Involved</a>
+    <div class="search-container">
+        <button id="search-icon" class="search-btn">🔍</button>
+        <form id="search-form" class="search-form" style="display: none;">
+            <input type="text" placeholder="Search..." class="search-input">
+        </form>
+    </div>
+</div>
             </div>
         </div>
     </div>

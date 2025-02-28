@@ -96,6 +96,18 @@
     <!-- Main JS -->
     <script src="{{ asset('website/js/main.js') }}"></script>
 
+    <script>
+    document.getElementById('search-icon').addEventListener('click', function() {
+        var form = document.getElementById('search-form');
+        if (form.style.display === 'none' || form.style.display === '') {
+            form.style.display = 'block';
+            form.querySelector('.search-input').focus();
+        } else {
+            form.style.display = 'none';
+        }
+    });
+</script>
+
 </body>
 
 </html>

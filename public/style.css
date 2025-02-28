@@ -5,6 +5,13 @@ body {
     padding: 0;
 }
 
+.search-container {
+    position: relative;
+}
+.search-form {
+    margin-left: 10px;
+}
+
 /* Header Styles */
 .header {
     position: fixed;
