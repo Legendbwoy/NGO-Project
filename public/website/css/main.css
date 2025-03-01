@@ -409,6 +409,9 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 #mainmenu{
     display: inline-block;
     margin-right: 20px;
+    font-size: 25px !important;
+    font-size: small;
+    font-weight: normal;
 }
 #mainmenu li{
     position: relative;
@@ -1253,6 +1256,13 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 .hero-content p{
     color: #ddd;
+}
+.hero-content{
+    position: absolute;
+    padding: 3rem 6rem 3rem 5rem;
+    width: 50.875rem;
+    height: 380px;
+    background: linear-gradient(90.05deg, rgba(199, 83, 0, .72) 79.29%, rgba(232, 96, 0, 0) 99.96%) !important; /* Adjust colors as needed */ 
 }
 /* ==========================================================================
    15.0 Page Header Section
