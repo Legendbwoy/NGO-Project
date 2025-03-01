@@ -15,6 +15,11 @@
     color: white;
     border: 2px solid white;
     background: transparent;
+    width: 150px;
+    height: 45px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }
 
 .donate-btn:hover {
@@ -27,6 +32,11 @@
     color: red;
     border: 2px solid white;
     background: white;
+    width: 150px;
+    height: 45px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }
 
 .involved-btn:hover {
@@ -94,7 +104,7 @@
                         <a href="#"><img src="{{ asset('website/img/logo.png') }}" alt="Brand"></a>
                     </div>
                 </div>
-               <div class="col-sm-8 d-flex align-items-center justify-content-end" style="padding-right:1%">
+               <div class="col-sm-8 d-flex align-items-center justify-content-end" style="padding-right:1%;">
     <a href="#" class="default-btn donate-btn">Donate</a>
     <a href="#" class="default-btn involved-btn">Get Involved</a>
     <div class="search-container">
@@ -113,18 +123,33 @@
                 <div class="col-sm-4">
                     
                 </div>
-               <div class="col-sm-8 text-right">
+               <div class="col-sm-8 text-right" style="display: inline-block; font-size: .875rem !important;">
                    <ul id="mainmenu" class="nav navbar-nav nav-menu">
-                        <li class="active"> <a href="index.html">Home</a>
+                        <li class="active"> <a href="index.html">Who We Are</a>
                             <ul>
                                <li><a href="index.html">Home Default</a></li>
                                <li><a href="index-2.html">Home Modern</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="causes.html">Causes</a></li>
-                        <li><a href="event.html">Event</a></li>
-                        <li><a href="#">Pages</a> 
+                        <li><a href="about.html">What We Do</a>
+                         <ul>
+                               <li><a href="index.html">Home Default</a></li>
+                               <li><a href="index-2.html">Home Modern</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="causes.html">Where We Work</a>
+                         <ul>
+                               <li><a href="index.html">Home Default</a></li>
+                               <li><a href="index-2.html">Home Modern</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="event.html">Resources</a>
+                         <ul>
+                               <li><a href="index.html">Home Default</a></li>
+                               <li><a href="index-2.html">Home Modern</a></li>
+                            </ul>
+                        </li>
+                        {{-- <li><a href="#">Pages</a> 
                             <ul>
                                <li><a href="gallery.html">Gallery</a></li>
                                <li><a href="team.html">Volunteers</a></li>
@@ -139,7 +164,7 @@
                                <li><a href="blog-single.html">Blog Single</a></li>
                             </ul>
                         </li>
-                        <li> <a href="contact.html">Contact</a></li>
+                        <li> <a href="contact.html">Contact</a></li> --}}
                     </ul>
                     
                </div>

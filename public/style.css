@@ -53,6 +53,13 @@ body {
     background-color: white;
 }
 
+.hero-content {
+    background: linear-gradient(90.05deg, rgba(199, 83, 0, .72) 79.29%, rgba(232, 96, 0, 0) 99.96%) !important; /* Adjust colors as needed */ 
+    padding: 50px 0; /* Add some padding for spacing */
+    color: #333; /* Set a default text color */
+}
+
+
 /* Header Bottom Styles */
 .header-bottom {
     background-color: #ffffff; /* Background color for header */
