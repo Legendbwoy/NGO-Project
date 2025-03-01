@@ -270,19 +270,23 @@ button{
 
 
 /* Button Style */
-.btn_group{}
 .btn_group a{
     margin: 5px;
 }
+
+
 .default-btn{
-    /* background-color: #fe3300; */
-    color: #fff;
+    background-color: #fff;
+    color: #fe3300;
     line-height: 45px;
+    width: 170px;
+    height: 50px;
     display: inline-block;
     padding: 0 25px;
-    border-radius: 3px;
+    border-radius: 5px;
     font-size: 15px;
     font-weight: 500;
+    align-items: center;
 }
 .default-btn:hover{
     background-color: #ffffff;
@@ -430,19 +434,18 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     color: #f8b864;
 }
 /*Dropdown */
-#mainmenu li ul{
-    background-color: #fff;
-    width: 200px;
-    height: auto;
-    position: absolute;
-    left: 0;
-    top: 140%;
-    visibility: hidden;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    z-index: 999;
+#mainmenu li ul {
+    background-color: #fff; /* Background color */
+    width: 100vw; /* Full width of the viewport */
+    height: auto; /* Automatic height */
+    position: absolute; /* Positioning */
+    left: 0; /* Align to the left */
+    top: 140%; /* Adjust vertical position */
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Fully transparent */
+    transition: all 0.3s ease; /* Transition effect */
+    z-index: 999; /* Above other elements */
+    text-align: center; /* Center text within the dropdown */
 }
 #mainmenu li:hover > ul{
     visibility: visible;
@@ -1259,6 +1262,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 .hero-content{
     position: absolute;
+    margin-left: -10%;
     padding: 3rem 6rem 3rem 5rem;
     width: 50.875rem;
     height: 380px;
