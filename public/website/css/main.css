@@ -1238,35 +1238,76 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 /* ==========================================================================
    14.0 Hero Section
    ========================================================================== */
-.hero-section{
-	background-image: url(../img/cam.jpg);
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-position: center center;
-	-webkit-background-size: cover;
-	background-size: cover;
-    height: 900px;
+   .hero-section {
+    background-image: url(../img/cam.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100vh; /* Use full viewport height */
     display: flex;
     align-items: center;
+    justify-content: center; /* Center content horizontally */
+    position: relative; /* Positioning for absolute children */
 }
-.hero-content h1{
-    font-size: 52px;
-    color: #fff;
-    display: inline-block;
-}
-.hero-content h4{
-    color: #f8b864;
-}
-.hero-content p{
-    color: #ddd;
-}
-.hero-content{
+
+.hero-content {
     position: absolute;
-    margin-left: -10%;
-    padding: 3rem 6rem 3rem 5rem;
-    width: 50.875rem;
-    height: 380px;
-    background: linear-gradient(90.05deg, rgba(199, 83, 0, .72) 79.29%, rgba(232, 96, 0, 0) 99.96%) !important; /* Adjust colors as needed */ 
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    padding: 3rem; /* Padding for all sides */
+    margin-left: -20%;
+    width: 90%; /* Responsive width */
+    max-width: 800px; /* Max width for larger screens */
+    height: auto; /* Auto height */
+    background: linear-gradient(90.05deg, rgba(199, 83, 0, .72) 79.29%, rgba(232, 96, 0, 0) 99.96%) !important; /* Gradient */
+    text-align: center; /* Center text */
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Responsive font size */
+    color: #fff;
+    margin: 0; /* Remove default margin */
+}
+
+.hero-content h4 {
+    color: #f8b864;
+    font-size: 1.5rem; /* Responsive font size */
+}
+
+.hero-content p {
+    color: #ddd;
+    font-size: 1rem; /* Responsive font size */
+}
+
+/* Media Queries for Adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem; /* Smaller font size for tablets and phones */
+    }
+    .hero-content h4 {
+        font-size: 1.2rem; /* Adjust as needed */
+    }
+    .hero-content p {
+        font-size: 0.9rem; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 2rem; /* Less padding on small screens */
+    }
+    .hero-content h1 {
+        font-size: 2rem; /* Even smaller font size for mobile */
+    }
+    .hero-content h4 {
+        font-size: 1rem; /* Smaller font size */
+    }
+    .hero-content p {
+        font-size: 0.8rem; /* Smaller font size */
+    }
 }
 /* ==========================================================================
    15.0 Page Header Section
